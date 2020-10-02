@@ -1,0 +1,112 @@
+.main {
+  background-color: #1d1d1d;
+  width: auto;
+  height: 730px;
+}
+.title {
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  left: 100px;
+  top: 280px;
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  color: #55db40;
+}
+.content {
+  position: absolute;
+  width: 420px;
+  height: 72px;
+  left: 100px;
+  top: 387px;
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+
+button {
+  background: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border-color: #55db40;
+  color: #55db40;
+}
+.btn-products {
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  left: 100px;
+  top: 486px;
+}
+.btn-products:hover {
+  cursor: pointer;
+}
+.slide-left {
+  position: absolute;
+  width: 68px;
+  height: 61px;
+  left: 580px;
+  top: 300px;
+  background: #111111;
+  border-radius: 6px;
+}
+.slide-right {
+  position: absolute;
+  width: 68px;
+  height: 61px;
+  left: 1150px;
+  top: 300px;
+  background: #111111;
+  border-radius: 6px;
+}
+.max1000-img {
+  position: absolute;
+  width: 400px;
+  left: 800px;
+  top: 180px;
+}
+.ecoknit-img {
+  position: absolute;
+  width: 280px;
+  left: 620px;
+  top: 200px;
+}
+
+.max-mini {
+  position: absolute;
+  top: 505px;
+  left: 882px;
+}
+.list-circles {
+  display: flex;
+  position: absolute;
+  top: 520px;
+  left: 750px;
+}
+.list-circles > ul {
+  list-style: none;
+}
+.list-circles > ul > li > img {
+  flex-direction: row;
+  margin-left: 10px;
+}
+.list-items {
+  display: flex;
+  position: absolute;
+  top: 505px;
+}
+.list-items > ul {
+  list-style: none;
+}
+.list-items > ul > li > img {
+  flex-direction: row;
+}
