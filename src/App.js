@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Header from "./pages/Header";
+import Main from "./pages/Main";
+import "./style.css";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
       <Header />
-    </div>
+      <Main />
+    </Fragment>
   );
 }
 
