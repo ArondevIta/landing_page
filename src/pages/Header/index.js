@@ -7,11 +7,19 @@ import logo from "../../assets/logo-penalty.png";
 function Header() {
   return (
     <div id="header-nav">
-      <img id="logo" src={logo} alt="Penalty" />
-      <img id="logo-penalty" src={penalty} alt="Penalty" />
-      <form>
-        <input id="seach" placeholder="ENCONTRE SEUS PRODUTOS" type="text" />
-      </form>
+      <div className="logo">
+        <img src={logo} alt="Penalty" />
+        <img src={penalty} alt="Penalty" />
+      </div>
+      <div className="form">
+        <form>
+          <input
+            className="search"
+            placeholder="ENCONTRE SEUS PRODUTOS"
+            type="text"
+          />
+        </form>
+      </div>
 
       <div id="nav-list">
         <ul>
