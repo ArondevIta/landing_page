@@ -29,7 +29,7 @@ ul {
 }
 
 .logo {
-  margin-left: 150px;
+  margin-left: 50px;
   margin-top: 10px;
 }
 
@@ -41,7 +41,7 @@ ul {
 .form,
 .search {
   background: none;
-  margin-left: 250px;
+  margin-left: 150px;
   color: #ffffff;
   height: 35px;
 }

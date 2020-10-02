@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import Header from "./pages/Header";
-import Main from "./pages/Main";
+import Aside from "./pages/Aside";
 import "./style.css";
 
 function App() {
   return (
     <Fragment>
       <Header />
-      <Main />
+      <Aside />
     </Fragment>
   );
 }
