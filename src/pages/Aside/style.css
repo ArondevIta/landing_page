@@ -4,10 +4,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.teste1 {
-  padding: 25px;
-}
-
+.teste1,
 .teste2 {
   padding: 25px;
 }
@@ -51,6 +48,19 @@
   cursor: pointer;
 }
 
+.teste2 > div {
+  display: flex;
+}
+
+.teste2 > div > .icon {
+  padding: 8px;
+  background-color: #111111;
+  border-radius: 10px;
+  margin-top: 120px;
+  color: #55db40;
+  height: 40px;
+}
+
 .max-img {
   display: block;
   margin-left: auto;
@@ -59,17 +69,20 @@
 }
 
 .max-list {
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
+  width: 350px;
+  margin: 0 auto;
 }
-.conteudo {
-  background-color: azure;
+
+.max-list > ul {
+  display: flex;
+  list-style: none;
   align-content: center;
 }
-.conteudo #title {
-  margin-left: 100px;
-  margin-top: 300px;
+
+.max-mini {
+  width: 100%;
 }
+
 @media (min-width: 1281px) {
 }
 

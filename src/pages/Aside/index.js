@@ -24,14 +24,26 @@ function Aside() {
 
       <div className="teste2">
         <div>
+          <FaChevronLeft className="icon" />
           <img className="max-img" src={max1000} alt="" />
+          <FaChevronRight className="icon" />
         </div>
 
         <div className="max-list">
-          <img className="max-mini" src={maxMini} alt="" />
-          <img className="max-mini" src={maxMini} alt="" />
-          <img className="max-mini" src={maxMini} alt="" />
-          <img className="max-mini" src={maxMini} alt="" />
+          <ul>
+            <li>
+              <img className="max-mini" src={maxMini} alt="" />
+            </li>
+            <li>
+              <img className="max-mini" src={maxMini} alt="" />
+            </li>
+            <li>
+              <img className="max-mini" src={maxMini} alt="" />
+            </li>
+            <li>
+              <img className="max-mini" src={maxMini} alt="" />
+            </li>
+          </ul>
         </div>
         <p>Cores disponiveis</p>
         <h3>Visualizar em 360</h3>

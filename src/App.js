@@ -6,7 +6,7 @@ import "./style.css";
 function App() {
   return (
     <Fragment>
-      <Header />
+      {/* <Header /> */}
       <Aside />
     </Fragment>
   );
