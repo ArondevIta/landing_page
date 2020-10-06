@@ -1,112 +1,122 @@
-.main {
+.container {
   background-color: #1d1d1d;
-  width: auto;
-  height: 730px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.teste1 {
+  padding: 25px;
+}
+
+.teste2 {
+  padding: 25px;
+}
+
+.text {
+  width: 350px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: justify;
+  font-family: Trebuchet MS;
+  font-weight: normal;
+  color: #666666;
+  font-size: 12px;
+  line-height: 24px;
 }
 .title {
-  position: absolute;
-  width: 350px;
-  height: 150px;
-  left: 100px;
-  top: 280px;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
   font-family: Myriad Pro;
-  font-style: normal;
+  font-size: 23px;
+  line-height: 28px;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 43px;
-  display: flex;
   color: #55db40;
-}
-.content {
-  position: absolute;
-  width: 420px;
-  height: 72px;
-  left: 100px;
-  top: 387px;
-  font-family: Trebuchet MS;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  color: #666666;
 }
 
-button {
+.teste1 > div {
+  text-align: center;
+}
+
+.teste1 > div > #btn-products {
   background: none;
+  margin-top: 15px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #55db40;
   border-radius: 6px;
-  box-sizing: border-box;
-  border-color: #55db40;
   color: #55db40;
 }
-.btn-products {
-  position: absolute;
-  width: 180px;
-  height: 40px;
-  left: 100px;
-  top: 486px;
-}
-.btn-products:hover {
+#btn-products:hover {
   cursor: pointer;
 }
-.slide-left {
-  position: absolute;
-  width: 68px;
-  height: 61px;
-  left: 580px;
-  top: 300px;
-  background: #111111;
-  border-radius: 6px;
-}
-.slide-right {
-  position: absolute;
-  width: 68px;
-  height: 61px;
-  left: 1150px;
-  top: 300px;
-  background: #111111;
-  border-radius: 6px;
-}
-.max1000-img {
-  position: absolute;
-  width: 400px;
-  left: 800px;
-  top: 180px;
-}
-.ecoknit-img {
-  position: absolute;
-  width: 280px;
-  left: 620px;
-  top: 200px;
+
+.max-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
 }
 
-.max-mini {
-  position: absolute;
-  top: 505px;
-  left: 882px;
+.max-list {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
 }
-.list-circles {
-  display: flex;
-  position: absolute;
-  top: 520px;
-  left: 750px;
+.conteudo {
+  background-color: azure;
+  align-content: center;
 }
-.list-circles > ul {
-  list-style: none;
+.conteudo #title {
+  margin-left: 100px;
+  margin-top: 300px;
 }
-.list-circles > ul > li > img {
-  flex-direction: row;
-  margin-left: 10px;
+@media (min-width: 1281px) {
 }
-.list-items {
-  display: flex;
-  position: absolute;
-  top: 505px;
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
 }
-.list-items > ul {
-  list-style: none;
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
 }
-.list-items > ul > li > img {
-  flex-direction: row;
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

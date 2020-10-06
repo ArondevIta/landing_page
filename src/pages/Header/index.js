@@ -6,7 +6,7 @@ import logo from "../../assets/logo-penalty.png";
 
 function Header() {
   return (
-    <div id="header-nav">
+    <div className="header-nav">
       <div className="logo">
         <img src={logo} alt="Penalty" />
         <img src={penalty} alt="Penalty" />
@@ -20,8 +20,7 @@ function Header() {
           />
         </form>
       </div>
-
-      <div id="nav-list">
+      <nav>
         <ul>
           <li>ATENDIMENTO</li>
           <li>CORPORATIVO</li>
@@ -30,7 +29,9 @@ function Header() {
             <FaShoppingCart />
           </li>
         </ul>
-      </div>
+      </nav>
+
+      <div className="nav-list"></div>
     </div>
   );
 }
