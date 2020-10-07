@@ -24,9 +24,13 @@ function Aside() {
 
       <div className="teste2">
         <div>
-          <FaChevronLeft className="icon" />
+          <div className="icones">
+            <FaChevronLeft className="icon" />
+          </div>
           <img className="max-img" src={max1000} alt="" />
-          <FaChevronRight className="icon" />
+          <div className="icones">
+            <FaChevronRight className="icon" />
+          </div>
         </div>
 
         <div className="max-list">
@@ -45,12 +49,14 @@ function Aside() {
             </li>
           </ul>
         </div>
-        <p>Cores disponiveis</p>
+        <p id="text-color">Cores disponiveis</p>
         <h3>Visualizar em 360</h3>
-        <p>
+        <p id="text-vision">
           Tenha uma visão completa da bola MX1000, <a href="#">clique aqui.</a>
         </p>
-        <button>Adicionar ao carrinho</button>
+        <div>
+          <input id="btn-add-car" type="submit" value="Adicionar ao carrinho" />
+        </div>
       </div>
     </div>
   );

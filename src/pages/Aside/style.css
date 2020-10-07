@@ -24,7 +24,7 @@
   width: 250px;
   margin: 0 auto;
   text-align: center;
-  font-family: Myriad Pro;
+  font-family: "Roboto", sans-serif;
   font-size: 23px;
   line-height: 28px;
   font-weight: bold;
@@ -48,17 +48,23 @@
   cursor: pointer;
 }
 
-.teste2 > div {
-  display: flex;
+.teste2 > #text-color {
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
 }
 
-.teste2 > div > .icon {
-  padding: 8px;
+.icones {
   background-color: #111111;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
   border-radius: 10px;
   margin-top: 120px;
+}
+.icon {
+  height: 30px;
   color: #55db40;
-  height: 40px;
 }
 
 .max-img {
@@ -81,6 +87,43 @@
 
 .max-mini {
   width: 100%;
+}
+
+.teste2 > div {
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#text-vision {
+  width: 200px;
+  margin: 0 auto;
+  color: #666666;
+  font-size: 16px;
+  line-height: 21px;
+}
+#text-vision > a {
+  color: #55db40;
+}
+#btn-add-car {
+  position: absolute;
+  background-color: #55db40;
+  height: 50px;
+  width: 250px;
+  border: 1px solid #55db40;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000;
 }
 
 @media (min-width: 1281px) {
